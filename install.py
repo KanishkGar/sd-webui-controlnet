@@ -5,6 +5,7 @@ from typing import Tuple, Optional
 
 req_file = os.path.join(os.path.dirname(os.path.realpath(__file__)), "requirements.txt")
 default_command_live = (os.environ.get('WEBUI_LAUNCH_LIVE_OUTPUT') == "1")
+index_url = os.environ.get('INDEX_URL', "")
 
 
 def run_pip(command, desc=None, live=default_command_live):
